@@ -39,7 +39,7 @@ const findRoutes = (routes) => {
     for (let i = 0; i < routes.length; i++) {
         const current = routes[i];
         let isAnIntermediateRoute = false;
-        for (j = 0; j < routes.length; j++) {
+        for (let j = 0; j < routes.length; j++) {
             if(current[0] === routes[j][1]) {
                 isAnIntermediateRoute = true;
                 intermediateRoutes.push(current);
