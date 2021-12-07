@@ -5,8 +5,7 @@
  */
 
  function isPangram (sentence){
-
-	const dict = {
+    const dict = {
       a: false,
       b: false,
       c: false,
@@ -42,7 +41,7 @@
     for (const [key, value] of Object.entries(dict)) {
       pangram = pangram && value;
     }
-	return pangram;
+    return pangram;
 }
 
 console.info(isPangram("The quick brown fox jumps over the lazy dog")); //true
